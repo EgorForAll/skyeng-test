@@ -2,13 +2,15 @@
   position: relative;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form {
   margin-top: 50px;
 }
 
-#search-bar {
+.search-input {
   padding: 10px 20px;
   width: 500px;
   background-color: #ebebeb;
@@ -34,4 +36,46 @@
 } /* Firefox 18- */
 :-ms-input-placeholder {
   color: #9e9e9e;
+}
+
+.users-list {
+  margin: 50px 100px;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  min-height: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 70px;
+}
+
+.user-card {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #d9d9d9;
+}
+
+.user-name {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.profile-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.user-id {
+  align-self: flex-start;
+  margin-top: 20px;
+}
+
+.checkbox-wrapper {
+  margin-top: 10px;
+  display: flex;
 }

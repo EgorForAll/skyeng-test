@@ -15,15 +15,24 @@ const Search = () => {
 
   return (
     <form className="form" method="GET" action="" ref={FormRef}>
-      <input
-        ref={SearchInputRef}
-        type="text"
-        id="search-bar"
-        placeholder="введите логин пользователя"
-      />
-      <button type="submit" className="submit-btn">
-        Поиск
-      </button>
+      <div className="search-bar">
+        <input
+          ref={SearchInputRef}
+          className="search-input"
+          type="text"
+          placeholder="введите логин пользователя"
+        />
+        <button type="submit" className="submit-btn">
+          Поиск
+        </button>
+      </div>
+      <div className="checkbox-wrapper">
+        <span>Количество репозиториев:</span>
+        <input type="radio" id="up" name="radio" />
+        <label htmlFor="up">по возрастанию</label>
+        <input type="radio" id="down" name="radio" />
+        <label htmlFor="down">по убыванию</label>
+      </div>
     </form>
   );
 };
