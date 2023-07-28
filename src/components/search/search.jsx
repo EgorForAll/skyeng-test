@@ -26,13 +26,6 @@ const Search = () => {
           Поиск
         </button>
       </div>
-      <div className="checkbox-wrapper">
-        <span>Количество репозиториев:</span>
-        <input type="radio" id="up" name="radio" />
-        <label htmlFor="up">по возрастанию</label>
-        <input type="radio" id="down" name="radio" />
-        <label htmlFor="down">по убыванию</label>
-      </div>
     </form>
   );
 };

@@ -1,8 +1,9 @@
 import { createReducer } from "@reduxjs/toolkit";
-import { loadUsers } from "./actions";
+import { loadUsers, addReposNumber } from "./actions";
 
 const initialState = {
   listOfUsers: [],
+  numberOfRepos: [],
 };
 
 export const reducer = createReducer(initialState, (builder) => {

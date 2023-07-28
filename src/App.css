@@ -75,7 +75,16 @@
   margin-top: 20px;
 }
 
-.checkbox-wrapper {
+.sorting {
+  margin-top: 20px;
+}
+
+.sorting-bar {
+  margin-left: 10px;
+  padding: 5px 10px;
+}
+
+.card-repositories {
+  align-self: flex-start;
   margin-top: 10px;
-  display: flex;
 }
