@@ -2,10 +2,40 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 import UserCard from "../user-card/user-card";
 
-const compareUp = (a, b) => a - b;
+const OAUTH_TOKEN = "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";
 
 const UsersList = ({ users }) => {
   const [sort, setSort] = useState("none");
+
+  async function getNumber(user) {
+    const response = await fetch(
+      `https://api.github.com/users/${user.login}/repos`,
+      {
+        method: "GET",
+        headers: {
+          Authorization: `token ${OAUTH_TOKEN}`,
+        },
+      }
+    ).then((res) => res.json());
+    const number = response.length;
+    return number;
+  }
+
+  const compareUp = (a, b) => {
+    let firstRepo = getNumber(a);
+    let secondRepo = getNumber(b);
+    if (firstRepo < secondRepo) {
+      return -1;
+    }
+    if (firstRepo > secondRepo) {
+      return -1;
+    }
+
+    return 0;
+  };
+
+  const sortedUsers = users.slice().sort(compareUp);
+  console.log(sortedUsers);
 
   return (
     <>

@@ -1,21 +1,8 @@
 import React, { useState } from "react";
 
-const OAUTH_TOKEN = "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";
-
 const UserCard = ({ user }) => {
   const [number, setNumber] = useState();
 
-  async function getNumber() {
-    await fetch(`https://api.github.com/users/${user.login}/repos`, {
-      method: "GET",
-      headers: {
-        Authorization: `token ${OAUTH_TOKEN} "https://api.github.com"`,
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => setNumber(data.length));
-  }
-  getNumber();
   return (
     <li className="user-card">
       <h2 className="user-name">{user.login}</h2>
