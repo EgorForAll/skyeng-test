@@ -1,17 +1,20 @@
 import React, { useEffect, useRef } from "react";
+import { useDispatch } from "react-redux";
+import { fetchUsersList } from "../../store/api-actions";
 
 const Search = () => {
   const SearchInputRef = useRef();
   const FormRef = useRef();
+  const dispatch = useDispatch();
   useEffect(() => {
     FormRef.current.addEventListener("submit", (e) => {
       e.preventDefault();
-      console.log(SearchInputRef.current.value);
+      dispatch(fetchUsersList(SearchInputRef.current.value));
     });
   });
 
   return (
-    <form className="form" method="POST" action="" ref={FormRef}>
+    <form className="form" method="GET" action="" ref={FormRef}>
       <input
         ref={SearchInputRef}
         type="text"

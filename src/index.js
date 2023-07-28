@@ -3,11 +3,20 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { Provider } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
+import { createAPI } from "./api";
 import App from "./App";
 import { reducer } from "./store/reducer";
 
+const api = createAPI();
+
 const store = configureStore({
   reducer: reducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      thunk: {
+        extraArgument: api,
+      },
+    }),
 });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
