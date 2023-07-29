@@ -2,7 +2,7 @@ import { createAction } from "@reduxjs/toolkit";
 
 export const ActionType = {
   LOAD_LIST_OF_USERS: "load list of users",
-  ADD_NUMBER_OF_REPOS: "add repos number",
+  CHANGE_SORT_TYPE: "change sort type",
 };
 
 export const loadUsers = createAction(
@@ -14,11 +14,4 @@ export const loadUsers = createAction(
   }
 );
 
-export const addReposNumber = createAction(
-  ActionType.ADD_NUMBER_OF_REPOS,
-  (number) => {
-    return {
-      payload: number,
-    };
-  }
-);
+export const changeSortType = createAction(ActionType.CHANGE_SORT_TYPE);

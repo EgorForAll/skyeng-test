@@ -75,16 +75,15 @@
   margin-top: 20px;
 }
 
-.sorting {
-  margin-top: 20px;
-}
-
-.sorting-bar {
-  margin-left: 10px;
-  padding: 5px 10px;
-}
-
-.card-repositories {
-  align-self: flex-start;
+.radio-buttons {
   margin-top: 10px;
+}
+
+.empty-list {
+  margin: 200px auto;
+}
+
+.empty-title {
+  color: #d9d9d9;
+  font-size: 40px;
 }

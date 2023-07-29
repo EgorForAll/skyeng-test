@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 const UserCard = ({ user }) => {
-  const [number, setNumber] = useState();
-
   return (
     <li className="user-card">
       <h2 className="user-name">{user.login}</h2>
@@ -21,7 +19,6 @@ const UserCard = ({ user }) => {
           </a>
         </span>
       </div>
-      <span className="card-repositories">Репозиториев: {number}</span>
     </li>
   );
 };
