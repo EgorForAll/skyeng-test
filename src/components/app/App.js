@@ -1,6 +1,6 @@
-import "./App.css";
-import Search from "./components/search/search";
-import UsersList from "./components/list/users-list";
+import "../../css/App.css";
+import Search from "../search/search";
+import UsersList from "../list/users-list";
 function App() {
   return (
     <div className="App">

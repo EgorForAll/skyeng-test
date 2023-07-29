@@ -1,10 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import { Provider } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
 import { createAPI } from "./api";
-import App from "./App";
+import App from "./components/app/App";
 import { reducer } from "./store/reducer";
 
 const api = createAPI();

@@ -21,7 +21,6 @@ class Search extends React.Component {
   }
 
   componentDidMount() {
-    console.log("render");
     this.FormRef.current.addEventListener("submit", (evt) => {
       evt.preventDefault();
       this.state.isAscSort

@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const UserCard = ({ user }) => {
+  const [isPopupOpend, setOpenPopup] = useState(false);
   return (
     <li className="user-card">
       <h2 className="user-name">{user.login}</h2>
@@ -19,6 +20,10 @@ const UserCard = ({ user }) => {
           </a>
         </span>
       </div>
+      <button className="card-btn" onClick={() => setOpenPopup(!isPopupOpend)}>
+        {isPopupOpend ? "Скрыть тип пользователя" : "Узнать тип пользователя"}
+      </button>
+      {isPopupOpend ? <span className="popup">{user.type}</span> : null}
     </li>
   );
 };

@@ -13,5 +13,3 @@ export const loadUsers = createAction(
     };
   }
 );
-
-export const changeSortType = createAction(ActionType.CHANGE_SORT_TYPE);
