@@ -41,9 +41,13 @@ class Search extends React.Component {
     return (
       <form className="form" method="GET" action="" ref={this.FormRef}>
         <div className="search-bar">
+          <label className="visually-hidden" htmlFor="search">
+            Строка поиска
+          </label>
           <input
             className="search-input"
             type="text"
+            id="search"
             placeholder="введите логин пользователя"
             ref={this.InputRef}
           />
@@ -60,7 +64,7 @@ class Search extends React.Component {
             checked={this.state.isAscSort}
             onChange={() => this.setState({ isAscSort: true })}
           />
-          <label htmlFor="up-radio">По возрастранию</label>
+          <label htmlFor="up-radio">По возрастанию</label>
           <input
             type="radio"
             name="radio"

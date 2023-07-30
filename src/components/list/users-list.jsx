@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import UserCard from "../user-card/user-card";
-import EmptyList from "../empty-list/emtry-list";
+import EmptyList from "../empty-list/empty-list";
 import Pagination from "../pagination/pagination";
 
 const UsersList = ({ users }) => {
