@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchComponent SearchComponent snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <form
+        action=""
+        class="form"
+        method="GET"
+      >
+        <div
+          class="search-bar"
+        >
+          <label
+            class="visually-hidden"
+            for="search"
+          >
+            Строка поиска
+          </label>
+          <input
+            class="search-input"
+            id="search"
+            placeholder="введите логин пользователя"
+            type="text"
+          />
+          <button
+            class="submit-btn"
+            type="submit"
+          >
+            Поиск
+          </button>
+        </div>
+        <div
+          class="radio-buttons"
+        >
+          <span>
+            Сортировать по количеству публичных репозиториев:
+          </span>
+          <input
+            checked=""
+            id="up-radio"
+            name="radio"
+            type="radio"
+          />
+          <label
+            for="up-radio"
+          >
+            По возрастанию
+          </label>
+          <input
+            id="down-radio"
+            name="radio"
+            type="radio"
+          />
+          <label
+            for="down-radio"
+          >
+            По убыванию
+          </label>
+        </div>
+      </form>
+    </div>
+  </body>,
+  "container": <div>
+    <form
+      action=""
+      class="form"
+      method="GET"
+    >
+      <div
+        class="search-bar"
+      >
+        <label
+          class="visually-hidden"
+          for="search"
+        >
+          Строка поиска
+        </label>
+        <input
+          class="search-input"
+          id="search"
+          placeholder="введите логин пользователя"
+          type="text"
+        />
+        <button
+          class="submit-btn"
+          type="submit"
+        >
+          Поиск
+        </button>
+      </div>
+      <div
+        class="radio-buttons"
+      >
+        <span>
+          Сортировать по количеству публичных репозиториев:
+        </span>
+        <input
+          checked=""
+          id="up-radio"
+          name="radio"
+          type="radio"
+        />
+        <label
+          for="up-radio"
+        >
+          По возрастанию
+        </label>
+        <input
+          id="down-radio"
+          name="radio"
+          type="radio"
+        />
+        <label
+          for="down-radio"
+        >
+          По убыванию
+        </label>
+      </div>
+    </form>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
