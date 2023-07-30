@@ -2,7 +2,6 @@ import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import React from "react";
 import { UsersList } from "./users-list";
-import "@testing-library/jest-dom";
 
 const users = [];
 

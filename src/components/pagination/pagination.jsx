@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Pagination = ({ usersPerPage, totalUsers, togglePage }) => {
   const pageNumbers = [];
@@ -18,6 +19,12 @@ const Pagination = ({ usersPerPage, totalUsers, togglePage }) => {
       </ul>
     </div>
   );
+};
+
+Pagination.propTypes = {
+  usersPerPage: PropTypes.number,
+  totalUsers: PropTypes.number,
+  togglePage: PropTypes.func,
 };
 
 export default Pagination;
